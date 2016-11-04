@@ -1,0 +1,27 @@
+This repository contains globalizing your code examples for C, C++ and Python
+programming language.
+
+The ex-basic or py-basic directory contains basic simple code written in C, C++
+or Python language.
+
+What you need to work on is
+1) Count the total number of strings in the given code in ex-basic or py-basic
+   directory. This is the code that contains no i18n or l10n
+
+2) Next in ex-i18n or py-i18n directory, use the same basic code and try to add
+   i18n functionality in it. We are using Gettext library for this excercise.
+   
+   Here, you just need to generate pot file.
+
+3) Next in ex-l10n or py-l10n directory, use the same i18n added code and try
+   to generate required po files. Then add translations to these po files.
+ 
+   Here we can either directly copy pot file as po file for any language or we
+   can use msginit command to generate that po file.
+
+4) To have a complete globalized code, go to ex-g11n or py-g11n directory and
+   create a directory structure that matches to the path given in bindtextdomain
+   function. The textdomain is the domain e.g. the application name.
+
+   Now once everything is in place, just run the code and check translations in
+   the added translations language.
